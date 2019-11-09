@@ -1,0 +1,23 @@
+Payer:
+
+Create Token (for demo), store tokenaddress
+Create JobMarket
+Call JobMarket.setTokenAddress(token address)
+Call JobMarket.createJob(name, description) — store jobaddress
+Retrieve Job at jobaddress
+Call Job.addCheckpoint(description, bounty) - store checkpointAddress from event
+Retrieve Checkpoint at checkpointAddress
+Call Token.approve(checkpointAddress, fundAmount)
+Call Checkpoint.fund(fundAmount) which where fundAmount >= bounty
+
+
+Freelancer:
+Retrieve Checkpoint at checkpointAddress
+Call Checkpoint.complete(url)
+
+
+Payer:
+Call Checkpoint.approve() --> fund gets transferred to Freelancer's account
+
+
+
