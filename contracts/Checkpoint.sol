@@ -30,6 +30,13 @@ contract Checkpoint {
     
     IERC20 public associatedToken;
     
+    event logFunded(uint balance, uint bounty);
+    event logCompleted(string url, address freelancer);
+    event logAccepted(string url, uint transferredBalance, address freelancer);
+    event logRejected(string url);
+    event logCancelled(address refundedAddress, uint refundedBalance);
+    
+    
     function fund(uint tokenAmount) public payable {
 
 // TODO user needs to manually do this
@@ -41,8 +48,11 @@ contract Checkpoint {
 
         // add the deposited tokens into existing balance 
         balance += tokenAmount;
+        
+        emit logFunded(balance, bounty);
     }
     
+    // freelancer completed work and provided url of work
     function complete(string memory _url) public {
         require(
             balance >= bounty,
@@ -53,8 +63,10 @@ contract Checkpoint {
         freelancer = msg.sender;
         completed = true;
         rejected = false;
+        emit logCompleted(url, freelancer);
     }
     
+    // payer approves the completed work
     function approve() public payable
     {
         require(
@@ -69,9 +81,11 @@ contract Checkpoint {
         
         accepted = true;
         associatedToken.transfer(freelancer, balance);
+        emit logAccepted(url, balance, freelancer);
         balance = 0;
     }
     
+    // payer rejects the completed work
     function reject() public 
     {
         require(
@@ -86,8 +100,10 @@ contract Checkpoint {
         
         rejected = true;
         completed = false;
+        emit logRejected(url);
     }
     
+    // payer cancels this work
     function cancel() public payable
     {
         require(
@@ -97,6 +113,8 @@ contract Checkpoint {
         
         cancelled = true;
         associatedToken.transfer(owner, balance);
+        emit logCancelled(owner, balance);
+        balance = 0;
     }
     
 
