@@ -1,7 +1,7 @@
 pragma solidity >= 0.5.5 < 0.6.0;
 import "./Job.sol";
 
-contract Voting {
+contract JobMarket {
     
     
     //--------- Voting -------------
