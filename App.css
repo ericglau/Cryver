@@ -1,0 +1,195 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+h1{
+  font-size: 50px;
+  color:brown;
+  margin-top:50px;
+  padding: 25px;
+}
+button{
+  font-size: 20px;
+  color:black;
+  font-weight: 100;
+  padding:25px;
+  border-radius: 25px;
+  border:black;
+  
+}
+button:hover{
+  background-color: aqua;
+}
+
+h3{
+  text-align: left;
+  margin-left: 25px;
+  color:brown;
+}
+ul{
+  list-style: none;
+}
+li{
+  
+  border-radius: 10px;
+  margin:25px;
+  list-style: none;
+  text-align: center;
+  background-color: #000000;
+  margin-right: 30px;
+  width: 150px;
+  line-height: 60px;
+  background-color: coral;
+  font-size: 15;
+  font-weight: bold;
+  box-shadow:10px 15px 20px grey;
+}
+.flex{
+  display:flex;
+  flex-direction: row;
+}
+.butt{
+  margin: 50px;;
+  
+  display:flex;
+  flex-direction: column;
+}
+
+.upload{
+  background-color: white;
+  padding: 32px;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 
+}
+
+form{
+  margin: 15px;
+}
+.nav,h2{
+  background-color:burlywood;
+  padding: 50px;
+  margin-top: 0%;
+  font-size: 40px;
+  color:darkred;
+  font-weight: 200px;
+  box-shadow: 20px 20px 10px grey;
+
+}
+h3{
+  border-radius: 10px;
+  
+  list-style: none;
+  text-align: center;
+  color: bisque;
+  width: 300px;;
+  line-height: 60px;
+  background-color: brown;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow:20px 20px 10px grey
+}
+.jobtitle{
+
+  color: #000000;
+  background-color:c;
+  align-self: center;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: coral;
+  
+}
+.back{
+display: block;
+background-color: #000000;
+color: aliceblue;
+}
+
+.back:hover{
+  background-color: white;
+  color:black;
+}
+.firstpage{
+  display:flex;
+  flex-direction: row;
+  margin: 40px;
+  
+  justify-content: space-evenly;
+  
+}
+select{
+  display: flex;
+  margin: 40px;
+  background-color:burlywood;
+  color: #000000;
+  font-size: 25px;
+  
+
+}
+
+.mainpage{
+  background-color: aquamarine;
+  padding: 20px;
+  padding-right: 50px;
+}
+input{
+  font-size: 30px;;
+}
+
+.approve{
+  background-color: green;
+  color:white;
+  font-weight: bold;
+  box-shadow: none;
+}
+.approve:hover{
+  background-color: greenyellow;
+  color:black;
+
+}
+
+.reject{
+  background-color: red;
+  color:white;
+  box-shadow: none;
+  font-weight: bold;
+}
+.reject:hover{
+  background-color: orange;
+  color: black;
+}
+.up:hover{
+  background-color: goldenrod;
+  color:black;
+}
+.submission{
+  background:none;
+  box-shadow: none;
+  font-size: 20px;;
+  font-weight: bold;
+ 
+}
+
+:hover{
+  color:darkred;
+}
