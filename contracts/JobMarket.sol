@@ -1,8 +1,14 @@
 pragma solidity >= 0.5.5 < 0.6.0;
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.4.0/contracts/token/ERC20/IERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.4.0/contracts/token/ERC20/ERC20.sol";
+
 import "./Job.sol";
+import "./Token.sol";
 
 contract JobMarket {
     
+    // set existing stablecoin token address here
+    address tokenAddress = 0xA113b22D40DC1D5D086003C27A556e597F614E8B;
     
     //--------- Voting -------------
     
@@ -38,9 +44,14 @@ contract JobMarket {
     event logCreatedJob(address payer, address job, string name);
 
     function createJob(string memory name, string memory description) public {
-        Job job = new Job(msg.sender, name, description);
+        Job job = new Job(msg.sender, name, description, tokenAddress);
         emit logCreatedJob(msg.sender, address(job), name);
         jobs[msg.sender] = address(job);
+    }
+    
+    // for demo only, create a new token and give it to the owner
+    function setTokenAddress(address _tokenAddress) public {
+        tokenAddress = _tokenAddress;
     }
 
 }
