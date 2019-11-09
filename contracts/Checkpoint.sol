@@ -3,8 +3,6 @@ import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/ma
 import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/master/contracts/token/ERC20/ERC20.sol";
 
 contract Checkpoint {
-    
-    
 
     string public description;
     bool public completed;
@@ -20,14 +18,12 @@ contract Checkpoint {
     
     uint public balance;
 
-
     constructor(string memory _description, uint _bounty, IERC20 _token) public {
         owner = tx.origin;
         description = _description;
         bounty = _bounty;
         associatedToken = _token;
     }
-    
     
     IERC20 public associatedToken;
     
@@ -40,7 +36,7 @@ contract Checkpoint {
     
     function fund(uint tokenAmount) public payable {
 
-// TODO user needs to manually do this
+        // NOTE: user needs to manually do this
 
         associatedToken.approve(msg.sender, tokenAmount);
         
