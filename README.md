@@ -1,4 +1,4 @@
-# Job Market
+# Cryver - Cryptocurrency Job Market
 
 ### Demo videos
 Front end built with React - https://www.youtube.com/watch?v=_aWNCsyIz1Q  
