@@ -1,7 +1,7 @@
 # Job Market
 
 ### Demo videos
-Front end built with React - https://www.youtube.com/watch?v=_aWNCsyIz1Q
+Front end built with React - https://www.youtube.com/watch?v=_aWNCsyIz1Q  
 Back end built with Solidity - https://www.youtube.com/watch?v=2XQ1xH-Hlqw
 
 ### Personas
