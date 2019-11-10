@@ -2,9 +2,9 @@
 
 This project was developed for ETHWaterloo 2019 with team members: Eric Lau, Eric Wang, Nourish Cherish, and Cengiz Sirlan. The project's aim is to provide the best experince/alternative to paying freelancers for work using the power of crypto. Many popular freelance websites dont have much protection from freelancers and buyers from not being faithful, as such Cryver fixes this concern by creating a checkpoint system where the buyer set milestones that the freelancer must complete in order to earn segments of the promised pay, this way in order for the buyer to get the product they want and the freelancer to get the money they want, they both must continue to fulfill their promises. Aside from acccountability, Cryver also provides a way to pay freelancers with crypto without the concern of price volitity having an effect by exclusively using DAI, this way if a buyer and seller agree on a price and the development time has taken enough time that the promised value of a coin has since significantly increased or decreased to a point where a bigger portion of the coin has to be excluded or added. To avoid this issue DAI coins will be used as, DAI coins are free from this concern.
 
-![assign](/images/assign.jpg)
-![job](/images/job.jpg)
-![mainpage](/images/mainpage.jpg)
+![assign](/images/assign.jpg=500x250)
+![job](/images/job.jpg=400x250)
+![mainpage](/images/mainpage.jpg=450x250)
 
 ### Demo videos
 
